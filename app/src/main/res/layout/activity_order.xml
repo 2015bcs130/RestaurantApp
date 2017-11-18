@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#9c8eff"
+
+    android:layout_height="match_parent"
+    tools:context="jimmy.restaurantapp.Order">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:paddingLeft="5dp"
+    android:text="Dear customer you are requested to place your orders following the details below"
+    android:textSize="30dp"
+    android:textColor="#4224ff"
+    android:layout_height="wrap_content" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:paddingLeft="70dp"
+    android:text="Table-Number"
+    android:textSize="30dp"
+    android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/table"
+                android:paddingLeft="100dp"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/t1"
+                android:text="Tab1"
+                android:onClick="onRadioClick"
+                android:textSize="25dp"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:id="@+id/t2"
+            android:onClick="onRadioClick"
+            android:text="Tab2"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:id="@+id/t3"
+            android:onClick="onRadioClick"
+            android:text="Tab3"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:id="@+id/t4"
+            android:text="Tab4"
+            android:textSize="25dp"
+            android:onClick="onRadioClick"
+            android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingLeft="70dp"
+        android:text="Dishes"
+        android:paddingTop="10dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Fish"
+            android:id="@+id/c1"
+            android:textSize="25dp"
+            android:onClick="onCheckedBox"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Meat"
+            android:id="@+id/c2"
+            android:onClick="onCheckedBox"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Rice"
+            android:id="@+id/c3"
+            android:textSize="25dp"
+            android:onClick="onCheckedBox"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Posho"
+            android:id="@+id/c4"
+            android:onClick="onCheckedBox"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingLeft="70dp"
+        android:text="Drinks"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Mirinda"
+            android:id="@+id/d1"
+            android:textSize="25dp"
+            android:onClick="onCheck"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Fanta"
+            android:id="@+id/d2"
+            android:textSize="25dp"
+            android:onClick="onCheck"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Pepsi"
+            android:onClick="onCheck"
+            android:id="@+id/d3"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="MountainDiew"
+            android:onClick="onCheck"
+            android:id="@+id/d4"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Passion"
+            android:onClick="onCheck"
+            android:id="@+id/d5"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#af30ff"
+        android:id="@+id/btno"
+        android:text="PLACE ORDER"
+        android:textSize="25dp"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
